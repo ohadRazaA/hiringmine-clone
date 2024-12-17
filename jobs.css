@@ -1,0 +1,76 @@
+* {
+    margin: 0% !important;
+    padding: 0% !important;
+    box-sizing: border-box !important;
+}
+
+p {
+    margin: 5px !important;
+}
+
+.jobs {
+    background: linear-gradient(180deg, #ffffff 0%, #eeebff 69.79%, #ebe8ff 99.99%, #e1deff 100%);
+}
+
+.jobs>div {
+    width: 90%;
+    margin: 0 auto !important;
+}
+
+.jobs-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    width: 95%;
+}
+
+.jobs-card:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-top: -3px !important;
+    transition: box-shadow 0.3s ease;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px !important;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #c5c4c4;
+}
+
+.search input {
+    width: 500px !important;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px !important;
+}
+
+.filters div {
+    padding: 10px !important;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px !important;
+    color: #fff;
+    background-color: #6d4aee;
+
+}
