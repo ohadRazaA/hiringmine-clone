@@ -22,7 +22,7 @@ let jobs = [];
 const url1 = "https://backend-prod.app.hiringmine.com/api/jobAds/all?limit=10&pageNo=1&keyWord=&category=&isPending=false";
 const displayJob = document.getElementById('displayJob');
 
-const displayJobs = async () => {
+const fetchJobs = async () => {
     const res = await fetch(url1);
     const response = await res.json();
     allJobs = response.data;

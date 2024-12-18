@@ -5,13 +5,13 @@
 }
 
 .hero {
-    background-image: linear-gradient(180deg, #ffffff 0%, #eeebff 69.79%, #ebe8ff 99.99%, #e1deff 100%);
+    background-image: linear-gradient(180deg, #ffffff 0%, rgb(238, 235, 255) 69.79%, rgb(235, 232, 255) 99.99%, rgb(225, 222, 255) 100%);
 }
 
 .hero h1 {
     font-size: 70px;
     padding: 10px 150px;
-    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    background: linear-gradient(106.43deg, rgb(82, 47, 212), rgb(107, 220, 255) 95.12%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -24,14 +24,14 @@
     border: none;
     margin-right: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px rgb(204, 204, 204);
     outline: none;
 }
 
 .hero button {
     color: #fff;
     font-weight: bold;
-    background-color: #522fd4;
+    background-color: rgb(104, 81, 255);
     border-radius: 8px;
     width: 110px;
     padding: 8px;
@@ -40,9 +40,13 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.hero button:hover {
+    background-color: rgb(72, 56, 178);
+}
+
 .hero h2 {
     padding: 10px;
-    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    background: linear-gradient(106.43deg, rgb(82, 47, 212), rgb(107, 220, 255) 95.12%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -57,10 +61,16 @@
 }
 
 .keywords p {
-    border: 1px solid #6851ff;
+    border: 1px solid rgb(104, 81, 255);
     padding: 8px;
     border-radius: 8px;
-    color: #6851ff;
+    color: rgb(104, 81, 255);
+}
+
+.keywords p:hover {
+    background-color: rgba(104, 81, 255, 0.04);
+    border: 1px solid rgb(104, 81, 255);
+    ;
 }
 
 .categories {
@@ -68,43 +78,55 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    cursor: pointer;
 }
 
 .category {
-    padding: 5px 90px;
+    padding: 5px 10px;
     margin-top: 20px;
     height: 220px;
     width: 276px;
     text-align: center;
-    border: 1px solid #eee !important;
+    border: 1px solid rgb(238, 238, 238) !important;
     border-radius: 24px;
-    background: linear-gradient(180deg, #edebff, hsla(0, 0%, 100%, 0));
-    box-shadow: 8px 8px 15px #edebff;
+    background: linear-gradient(180deg, rgb(237, 235, 255), rgba(255, 255, 255, 0));
+    box-shadow: 0 4px 40px #bdb2ff3d;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.category p{
+
+.category:hover {
+    box-shadow: rgba(0, 0, 0, 0.239) 0 3px 8px;
+    transform: translateY(-4px);
+    transition: box-shadow 0.6s ease;
+}
+
+.category p {
     font-weight: bold;
-    color: #6851ff;
+    color: rgb(104, 81, 255);
 }
-.category span{
-    font-weight: bold;
-    color: #6851ff;
+
+.category span {
+    color: rgb(108, 108, 108);
 }
-.recommend-jobs-card{
+
+.recommend-jobs-card {
     width: 320px !important;
     border-radius: 8px;
-    box-shadow: 5px 5px 3px #eee;
+    box-shadow: 5px 5px 3px rgb(238, 238, 238);
     padding: 10px !important;
 }
+
 .recommend-jobs-card:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-    margin-bottom: 5px !important;
+    transform: translateY(-4px);
     transition: box-shadow 0.3s ease;
 }
-.footer-container{
-    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+
+.footer-container {
+    background: linear-gradient(180deg, rgb(77, 59, 219) 0%, rgb(151, 71, 255) 100%);
     padding: 20px;
     color: #fff;
     padding-top: 70px;
@@ -115,7 +137,8 @@
     transition: background-image 0.3s ease-in-out;
     cursor: pointer;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
